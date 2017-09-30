@@ -1,0 +1,30 @@
+2017-09-30 18:11:48,111 - INFO - An OscarMap of size 10 has been instantiated.
+2017-09-30 18:11:48,111 - INFO - ['alice', 0] is the first key-value pair you've added to index 3 of your OscarMap!
+2017-09-30 18:11:48,111 - INFO - The key-value pair ['alice', 0] is already in your OscarMap!
+2017-09-30 18:11:48,111 - INFO - The key 'alice' was already in your OscarMap, but the value has been updated to '9000'!
+2017-09-30 18:11:48,111 - WARNING - Collision! The key-value pair ['brian', 1] has been added. There are now 2 key-value pairs chained at index 3.
+2017-09-30 18:11:48,111 - INFO - ['christie', 2] is the first key-value pair you've added to index 5 of your OscarMap!
+2017-09-30 18:11:48,111 - INFO - ['dan', 3] is the first key-value pair you've added to index 0 of your OscarMap!
+2017-09-30 18:11:48,112 - INFO - ['eve', 4] is the first key-value pair you've added to index 9 of your OscarMap!
+2017-09-30 18:11:48,112 - INFO - ['franco', 5] is the first key-value pair you've added to index 1 of your OscarMap!
+2017-09-30 18:11:48,112 - INFO - ['gabby', 6] is the first key-value pair you've added to index 2 of your OscarMap!
+2017-09-30 18:11:48,112 - INFO - ['hank', 7] is the first key-value pair you've added to index 4 of your OscarMap!
+2017-09-30 18:11:48,112 - WARNING - Collision! The key-value pair ['isabella', 8] has been added. There are now 2 key-value pairs chained at index 5.
+2017-09-30 18:11:48,112 - WARNING - Collision! The key-value pair ['jimmy', 9] has been added. There are now 2 key-value pairs chained at index 1.
+2017-09-30 18:11:48,112 - ERROR - Your OscarMap has reached its max capacity of 10, no more items can be added.
+2017-09-30 18:11:48,112 - INFO - The value for key 'brian' is '1'.
+2017-09-30 18:11:48,112 - WARNING - Can't get the value for key 'alexa'; it's not in your OscarMap.
+2017-09-30 18:11:48,112 - INFO - Deleted the value for key 'isabella'; it was 8.
+2017-09-30 18:11:48,112 - WARNING - Can't delete the value for key 'jacob'; it's not in your OscarMap.
+2017-09-30 18:11:48,112 - INFO - The load factor for your OscarMap is '0.9'.
+2017-09-30 18:11:48,113 - INFO - 
+[[['dan', 3]],
+ [['franco', 5], ['jimmy', 9]],
+ [['gabby', 6]],
+ [['alice', 9000], ['brian', 1]],
+ [['hank', 7]],
+ [['christie', 2], ['isabella', None]],
+ [[None]],
+ [[None]],
+ [[None]],
+ [['eve', 4]]]
