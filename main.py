@@ -1,4 +1,3 @@
-
 """
 @author: Oscar Hong (@ohong)
 @date: 09-30-2017
@@ -7,44 +6,6 @@
 import sys
 import logging
 import pprint
-
-
-def main():
-    # logs are written to 'log_file.txt'
-    # highest to lowest urgency: CRITICAL > ERROR > WARNING > INFO > DEBUG
-    logging.basicConfig(filename='log_file.txt', level=logging.DEBUG,
-                        format='%(asctime)s - %(levelname)s - %(message)s')
-
-    # Used for debug testing
-    # test set()
-    oscar = OscarMap(10)
-    oscar.set("alice", 0)  # Situation #1
-    oscar.set("alice", 0)  # Situation #2
-    oscar.set("alice", 9000)  # Situation #3
-    oscar.set("brian", 1)  # Situation #4
-    oscar.set("christie", 2)
-    oscar.set("dan", 3)
-    oscar.set("eve", 4)
-    oscar.set("franco", 5)
-    oscar.set("gabby", 6)
-    oscar.set("hank", 7)
-    oscar.set("isabella", 8)
-    oscar.set("jimmy", 9)
-    oscar.set("oscar", 10)  # Situation #0
-
-    # test get()
-    oscar.get("brian")  # It's in there
-    oscar.get("alexa")  # It's not in there
-
-    # test delete()
-    oscar.delete("isabella")  # It's in there
-    oscar.delete("jacob")  # It's not in there
-
-    # test load()
-    oscar.load()
-
-    # test display()
-    oscar.display()
 
 
 class OscarMap():
@@ -170,7 +131,3 @@ class OscarMap():
 
     def display(self):
         logging.info("\n" + pprint.pformat(self.list))
-
-
-if __name__ == '__main__':
-    main()
